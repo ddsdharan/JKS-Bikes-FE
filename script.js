@@ -7,7 +7,9 @@ function openModal() {
         var fullName = document.getElementById('fullName').value;
         var email = document.getElementById('email').value;
 
-        fetch('http://localhost:8000/api/submitFormData', {
+function openModal() {
+function openModal() {
+        fetch('https://jks-bikes.onrender.com/api/submitFormData', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
