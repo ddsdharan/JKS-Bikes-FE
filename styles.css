@@ -1,0 +1,64 @@
+body {
+    background-image: url('/img/body-background.avif'); 
+    background-size:fill;
+    background-repeat: no-repeat;
+}
+
+.launch-Heading {
+    background-color: rgba(255, 255, 255, 0.25); /* Adjust the alpha value to change transparency */
+    backdrop-filter: blur(5px); /* Adjust the blur value as needed */
+    padding: 5px;
+    border-radius: 40px;
+    text-align: center;
+    width: 25%;
+    margin: 0 auto;
+    margin-top: 2.5px;
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.25); /* Adjust the blur radius and color as needed */
+  }
+
+  .launch-Heading h2 {
+    font-size: 20px; /* Adjust font size as needed */
+    animation: glow 1.5s ease-in-out infinite alternate; /* Animation properties */
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff; /* Initial text shadow */
+    }
+    to {
+      text-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000; /* Final text shadow */
+    }
+  }
+
+  .navbar-brand {
+    font-size: 20px; /* Adjust font size as needed */
+    position: relative;
+    color: transparent; /* Hide the original text */
+  }
+  
+  .navbar-brand::after {
+    content: 'JKS-Bikes';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(3px);
+  }
+  
+  .neon {
+    fill: none;
+    stroke: #00ff00; /* Neon color */
+    stroke-width: 1.5;
+    stroke-linejoin: round;
+    stroke-dasharray: 150;
+    stroke-dashoffset: 150;
+    animation: dash 2s linear infinite alternate;
+  }
+  
+  @keyframes dash {
+    to {
+      stroke-dashoffset: -150;
+    }
+  }
+  
+  
