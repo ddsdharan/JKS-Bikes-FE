@@ -75,7 +75,8 @@ body {
   .modal-body {
     padding: 20px;
   }
-    .footer .text-muted a,
+
+.footer .text-muted a,
     .footer .text-muted p,
     .footer .text-muted {
         color: white !important;
