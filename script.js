@@ -8,7 +8,6 @@ function openModal() {
         var email = document.getElementById('email').value;
 
 function openModal() {
-function openModal() {
         fetch('https://jks-bikes.onrender.com/api/submitFormData', {
             method: 'POST',
             headers: {
