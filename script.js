@@ -7,7 +7,6 @@ function openModal() {
         var fullName = document.getElementById('fullName').value;
         var email = document.getElementById('email').value;
 
-function openModal() {
         fetch('https://jks-bikes.onrender.com/api/submitFormData', {
             method: 'POST',
             headers: {
@@ -15,13 +14,13 @@ function openModal() {
             },
             body: JSON.stringify({ fullName: fullName, email: email }),
         })
-            .then(response => response.json())
-            .then(data => {
-                console.log('Form data submitted to server:', data);
-                modal.hide();
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
+        .then(response => response.json())
+        .then(data => {
+            console.log('Form data submitted to server:', data);
+            modal.hide();
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
     });
 }
