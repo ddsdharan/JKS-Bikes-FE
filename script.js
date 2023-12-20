@@ -5,7 +5,7 @@ function openModal() {
     document.getElementById('notifyForm').addEventListener('submit', function (event) {
         event.preventDefault();
         var fullName = document.getElementById('fullName').value;
-        var mobile = document.getElementById('mobile').value;
+        var mobile = document.getElementById('mobileNumber').value;
         var email = document.getElementById('email').value;
 
         fetch('https://jks-bikes.onrender.com/api/submitFormData', {
